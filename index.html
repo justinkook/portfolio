@@ -23,11 +23,35 @@
 </head>
 
 <body data-n-head="">
+    <section id="overlay">
+        <ul>
+            <li>
+                <a class="menu-selected" href="#__nuxt">Home</a>
+            </li>
+            <li>
+                <a class="menu-selected" href="#projects">Projects</a>
+                    <span><a class="menu-selected" href="#">Simplicity</a></span>
+                    <span><a class="menu-selected" href="#">Yelp</a></span>
+                    <span><a class="menu-selected" href="#">BillPay</a></span>
+                    <span><a class="menu-selected" href="#">Space Shooter</a></span>
+                    <span><a class="menu-selected" href="#">Emory Rehab</a></span>
+                    <span><a class="menu-selected" href="#">MARTARewards</a></span>
+            </li>
+            <li>
+                <a href="#">About</a>
+                    <span><a href="https://www.linkedin.com/in/justinkook/" target="_blank">LinkedIn</a></span>
+                    <span><a href="https://github.com/justinkook" target="_blank">Github</a></span>
+            </li>
+            <li>
+                <a href="https://blog.justinkook.com" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </section>
     <div id="__nuxt">
         <div class="nuxt-progress" style="width:0%;height:2px;background-color:black;opacity:0;"></div>
         <div id="__layout">
             <div class="app">
-                <div class="float-menu">
+                <div id="open-menu" class="float-menu">
                     <div class="float-menu__toggle burger burger--visible" style="background-color: rgb(255, 255, 255);"><span
                             class="burger__icon"><span class="burger__icon__line"></span><span class="burger__icon__line"></span></span></div>
                 </div>
@@ -45,7 +69,7 @@
                     <section class="hero hero--full">
                         <div class="swipe-loader"></div>
                         <div class="hero__inner">
-                            <h1 class="hero__title text-mask text-reveal"><span class="hero__title__line">Justin Kook
+                            <h1  class="hero__title text-mask text-reveal"><span class="hero__title__line">Justin Kook
                                     <span class="hero__title__line__reveal-box"></span></span><br></h1>
                             <div class="hero__text fadein">
                                 <div class="hero__summary">
@@ -73,7 +97,7 @@
 
 
                     </section>
-                    <div>
+                    <div id="projects">
                         <div class="foreground-module foreground-module--text-dark foreground-module--right"
                             data-v-090ab9d0="">
                             <div class="vertical-text" style="top: 108.172px;" data-v-090ab9d0="">
@@ -88,8 +112,8 @@
                                         <h2 data-v-0807cd28="" data-v-6c27f191="">Projects</h2>
                                     </div>
                                     <div class="cases-box__wrapper" data-v-6c27f191="">
-                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://simplicitygt.herokuapp.com/" target="_blank"
-                                                class="case-item__link">
+                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://simplicitygt.herokuapp.com/"
+                                                target="_blank" class="case-item__link">
                                                 <div class="case-item__imagewrap invue">
                                                     <div class="case-item__imagewrap__hover" style="background-color:#C2B3BA;"></div>
                                                     <div nobgcolor="" class="case-item__image loaded image" style="background-color:transparent;height:null;"
@@ -101,19 +125,22 @@
                                                         <div data-v-5f661d12=""><noscript><img src="images/simplicity.png"
                                                                     class="inlineimage" /></noscript></div>
                                                     </div>
-                                                </div></a>
-                                                <div class="case-item__info invue">
-                                                    <p class="case-item__title">Simplicity - Employee Directory App
-                                                    </p>
-                                                    <br>
-                                                    <p class="case-item__description">Minimalistic CRUD App. Functions
-                                                        include print, verify, lookup, contains, update, add, and
-                                                        delete.</p>
                                                 </div>
-                                                <a class="case-item__description" href="https://github.com/justinkook/simplicity" target="_blank"><u>View on Github</u></a>
+                                            </a>
+                                            <div class="case-item__info invue">
+                                                <p class="case-item__title">Simplicity - Employee Directory App
+                                                </p>
+                                                <br>
+                                                <p class="case-item__description">Minimalistic CRUD App to manage
+                                                    hires. Functions
+                                                    include print, verify, lookup, contains, update, add, and
+                                                    delete.</p>
                                             </div>
-                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://yelpper.herokuapp.com/" target="_blank"
-                                                class="case-item__link">
+                                            <a class="case-item__description" href="https://github.com/justinkook/simplicity"
+                                                target="_blank"><u>View on Github</u></a>
+                                        </div>
+                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://yelpper.herokuapp.com/"
+                                                target="_blank" class="case-item__link">
                                                 <div class="case-item__imagewrap invue">
                                                     <div class="case-item__imagewrap__hover" style="background-color:#335185;"></div>
                                                     <div nobgcolor="" class="case-item__image loaded image" style="background-color:transparent;height:null;"
@@ -128,19 +155,21 @@
                                                         <div data-v-5f661d12=""><noscript><img src="images/yelp.png"
                                                                     class="inlineimage" /></noscript></div>
                                                     </div>
-                                                </div></a>
-                                                <div class="case-item__info invue">
-                                                    <p class="case-item__title">Yelp Clone
-                                                        Web App</p>
-                                                    <br>
-                                                    <p class="case-item__description">Web App developed using JQuery,
-                                                        Node, Express, and MongoDB. Search by location or tags and
-                                                        leave reviews. Hosted on Heroku.</p>
                                                 </div>
-                                                <a class="case-item__description" href="https://github.com/reduncan/yelpclone" target="_blank"><u>View on Github</u></a>
+                                            </a>
+                                            <div class="case-item__info invue">
+                                                <p class="case-item__title">Yelp Clone
+                                                    Web App</p>
+                                                <br>
+                                                <p class="case-item__description">Web App developed using JQuery,
+                                                    Node, Express, and MongoDB. Search by location or tags and
+                                                    leave reviews. Hosted on Heroku.</p>
                                             </div>
-                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://github.com/justinkook/eth-atl-billing" target="_blank"
-                                                class="case-item__link">
+                                            <a class="case-item__description" href="https://github.com/reduncan/yelpclone"
+                                                target="_blank"><u>View on Github</u></a>
+                                        </div>
+                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://github.com/justinkook/eth-atl-billing"
+                                                target="_blank" class="case-item__link">
                                                 <div class="case-item__imagewrap invue">
                                                     <div class="case-item__imagewrap__hover" style="background-color:#4b514c;"></div>
                                                     <div nobgcolor="" class="case-item__image loaded image" style="background-color:transparent;height:null;"
@@ -156,16 +185,113 @@
                                                         <div data-v-5f661d12=""><noscript><img src="images/provide.png"
                                                                     class="inlineimage" /></noscript></div>
                                                     </div>
-                                                </div></a>
-                                                <div class="case-item__info invue">
-                                                    <p class="case-item__title">BillPay - Blockchain Payment App</p>
-                                                    <br>
-                                                    <p class="case-item__description">Honorable mention in Eth ATL.
-                                                        Made with React, Semantic UI, Typescript and deployed on
-                                                        Provide blockchain. Smart Contracts written in Solidity.</p>
                                                 </div>
-                                                <a class="case-item__description" href="https://github.com/justinkook/eth-atl-billing" target="_blank"><u>View on Github</u></a>
+                                            </a>
+                                            <div class="case-item__info invue">
+                                                <p class="case-item__title">BillPay - Blockchain Payment App</p>
+                                                <br>
+                                                <p class="case-item__description">Honorable mention in Eth ATL.
+                                                    Made with React, Semantic UI, Typescript and deployed on
+                                                    Provide blockchain. Smart Contracts written in Solidity.</p>
                                             </div>
+                                            <a class="case-item__description" href="https://github.com/justinkook/eth-atl-billing"
+                                                target="_blank"><u>View on Github</u></a>
+                                        </div>
+                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://space-shooting-game.herokuapp.com/"
+                                                target="_blank" class="case-item__link">
+                                                <div class="case-item__imagewrap invue">
+                                                    <div class="case-item__imagewrap__hover" style="background-color:#4b514c;"></div>
+                                                    <div nobgcolor="" class="case-item__image loaded image" style="background-color:transparent;height:null;"
+                                                        data-v-5f661d12="">
+                                                        <div class="case-item__image__overlay" style="background-color:#4b514c;"
+                                                            data-v-5f661d12=""></div>
+                                                        <div class="cropimage" style="background-image: url(images/spaceshooter.png)"
+                                                            data-v-5f661d12="" https:="" source.unsplash.com=""
+                                                            featured="">
+                                                            <div class="cropimage" style="background-image: url(images/spaceshooter.png)"
+                                                                data-v-5f661d12="" https:="" source.unsplash.com=""></div>
+                                                        </div>
+                                                        <div data-v-5f661d12=""><noscript><img src="images/spaceshooter.png"
+                                                                    class="inlineimage" /></noscript></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="case-item__info invue">
+                                                <p class="case-item__title">Space Shooter - Multiplayer Shooter Arcade</p>
+                                                <br>
+                                                <p class="case-item__description">A real-time multiplayer free for all
+                                                    battle arena space game.
+                                                    Built engine on Phaser 2, enabled real-time through dynamic
+                                                    Socket.io connections.
+                                                    MERN stack, Socket.io.
+                                                </p>
+                                            </div>
+                                            <a class="case-item__description" href="https://github.com/moz5691/space-shooting-game"
+                                                target="_blank"><u>View on Github</u></a>
+                                        </div>
+                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://emoryhealthcare-rehab.herokuapp.com/"
+                                                target="_blank" class="case-item__link">
+                                                <div class="case-item__imagewrap invue">
+                                                    <div class="case-item__imagewrap__hover" style="background-color:#4b514c;"></div>
+                                                    <div nobgcolor="" class="case-item__image loaded image" style="background-color:transparent;height:null;"
+                                                        data-v-5f661d12="">
+                                                        <div class="case-item__image__overlay" style="background-color:#4b514c;"
+                                                            data-v-5f661d12=""></div>
+                                                        <div class="cropimage" style="background-image: url(images/emoryrehab.png)"
+                                                            data-v-5f661d12="" https:="" source.unsplash.com=""
+                                                            featured="">
+                                                            <div class="cropimage" style="background-image: url(images/emoryrehab.png)"
+                                                                data-v-5f661d12="" https:="" source.unsplash.com=""></div>
+                                                        </div>
+                                                        <div data-v-5f661d12=""><noscript><img src="images/emoryrehab.png"
+                                                                    class="inlineimage" /></noscript></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="case-item__info invue">
+                                                <p class="case-item__title">Emory Rehab - Location Search App</p>
+                                                <br>
+                                                <p class="case-item__description">A location search iOS app and
+                                                    progressive web app for Emory Rehabilitation Outpatient Clinics.
+                                                    <br>iOS App build on Xcode 10 and Swift 4 and designed with Adobe
+                                                    XD.<br>
+                                                    MongoDB, Express, Node.js, and JQuery for mobile web app.
+                                                </p>
+                                            </div>
+                                            <a class="case-item__description" href="https://github.com/justinkook/emoryrehabilitation"
+                                                target="_blank"><u>View on Github</u></a>
+                                        </div>
+                                        <div class="case-item cases-box__item" data-v-6c27f191=""><a href="https://masterminding.github.io/marta/"
+                                                target="_blank" class="case-item__link">
+                                                <div class="case-item__imagewrap invue">
+                                                    <div class="case-item__imagewrap__hover" style="background-color:#4b514c;"></div>
+                                                    <div nobgcolor="" class="case-item__image loaded image" style="background-color:transparent;height:null;"
+                                                        data-v-5f661d12="">
+                                                        <div class="case-item__image__overlay" style="background-color:#4b514c;"
+                                                            data-v-5f661d12=""></div>
+                                                        <div class="cropimage" style="background-image: url(images/MartaRewards.png)"
+                                                            data-v-5f661d12="" https:="" source.unsplash.com=""
+                                                            featured="">
+                                                            <div class="cropimage" style="background-image: url(images/MartaRewards.png)"
+                                                                data-v-5f661d12="" https:="" source.unsplash.com=""></div>
+                                                        </div>
+                                                        <div data-v-5f661d12=""><noscript><img src="images/MartaRewards.png"
+                                                                    class="inlineimage" /></noscript></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="case-item__info invue">
+                                                <p class="case-item__title">MARTARewards - Rider Rewards App</p>
+                                                <br>
+                                                <p class="case-item__description">Starbucks-like rewards app for MARTA
+                                                    riders in the city of Atlanta built on React.native using Ignite.<br>Winner
+                                                    of MARTA Hackathon and collaboration project with Code for Atlanta.
+                                                    Designed with HTML, CSS and flexible on iOS and Android.</p>
+                                            </div>
+                                            <a class="case-item__description" href="https://github.com/justinkook/MARTARewards"
+                                                target="_blank"><u>View on Github</u></a>
+                                        </div>
+
                                     </div>
                                 </section>
                             </div>
@@ -178,13 +304,15 @@
                         <div class="teaser">
                             <div class="test smartFlash inView" data-v-0807cd28="">
                                 <div class="teaser__text" data-v-0807cd28="">
-                                    <p>Read my Blog on <span class="underline">Medium</span>
+                                    <span class="underline">Skills</span>
+                                    <p>APIs, Adobe XD, Express, iOS, jQuery, MongoDB, MySQL, Node.Js, Progressive Web
+                                        Apps, React Native, React.js, writing tests.
                                     </p>
                                 </div>
                             </div>
-                            <div class="smartFlash inView" data-v-0807cd28=""><a href="https://blog.justinkook.com" target="_blank"
-                                    class="teaser__link arrow-link" data-v-262420ea="" data-v-0807cd28=""><span class="arrow-link__arrow"
-                                        data-v-262420ea=""><span class="arrow-link__arrow__icon arrow-link__arrow__icon--original"
+                            <div class="smartFlash inView" data-v-0807cd28=""><a href="https://blog.justinkook.com"
+                                    target="_blank" class="teaser__link arrow-link" data-v-262420ea="" data-v-0807cd28=""><span
+                                        class="arrow-link__arrow" data-v-262420ea=""><span class="arrow-link__arrow__icon arrow-link__arrow__icon--original"
                                             data-v-262420ea=""><svg width="46" height="9" xmlns="http://www.w3.org/2000/svg"
                                                 data-v-262420ea="">
                                                 <path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z"
@@ -195,12 +323,15 @@
                                                 <path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z"
                                                     fill-rule="evenodd"></path>
                                             </svg></span></span><span class="arrow-link__text" data-v-262420ea="">Read
+                                        my blog
                                     </span></a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/overlay.js"></script>
 </body>
 
 </html>
